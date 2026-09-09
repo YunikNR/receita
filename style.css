@@ -1,0 +1,71 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4ecf7;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+.titulo-principal {
+    font-size: 100px;
+    text-align: center;
+    color: #4a2c2a;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+
+.carrossel {
+    width: 800px;       
+    height: 400px;          
+    margin: 0 auto 40px auto;
+    overflow: hidden;         
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.slides {
+    display: flex;            
+    width: 300%;            
+    height: 100%;
+    animation: deslizar 9s infinite; 
+}
+
+.slides img {
+    width: 33.333%;         
+    height: 100%;
+    object-fit: cover;        
+}
+
+@keyframes deslizar {
+    0%   { transform: translateX(0); }        
+    30%  { transform: translateX(0); }
+    33%  { transform: translateX(-33.333%); }
+    63%  { transform: translateX(-33.333%); }
+    66%  { transform: translateX(-66.666%); } 
+    96%  { transform: translateX(-66.666%); }
+    100% { transform: translateX(0); }         
+}
+
+.conteudo-receitas {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card-receita {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border-left: 8px solid #4a2c2a;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card-receita h2 {
+    color: #4a2c2a;
+    margin-top: 0;
+}
+
+ul, ol {
+    line-height: 1.6;
+}
